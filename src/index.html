@@ -1,13 +1,3086 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/public.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-
+    <div class="header_bg">
+        <div class="header">
+            <ul class="header_left">
+                <li>国美会员<i class="glyphicon glyphicon-menu-down"></i></li>
+                <li><a href="javscript:;" class="login">登录</a></li>
+                <li><a href="javscript:;" class="regeist">注册有礼</a><i class="glyphicon glyphicon-certificate"></i></li>
+            </ul>
+            <ul class="header_right">
+                <li><a href="javascript:;">我的订单</a></li>
+                <li><a href="javascript:;">我的国美</a><i class="glyphicon glyphicon-menu-down"></i></li>
+                <li><a href="javascript:;">企业采购</a></li>
+                <li><a href="javascript:;">服务中心</a><i class="glyphicon glyphicon-menu-down"></i></li>
+                <li><a href="javascript:;">网站导航</a><i class="glyphicon glyphicon-menu-down"></i></li>
+                <li><a href="javascript:;">手机国美</a><i class="glyphicon glyphicon-menu-down"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="search_bg">
+        <div class="search">
+            <a href="javascript:;" class="logo"></a>
+            <img class="movelogo" src="imgs/T1SgL_BjAT1RCvBVdK.gif"/>
+            <form action="">
+                <select name="" id="">
+                    <option value="商品">商品</option>
+                    <option value="店铺">店铺</option>
+                    <option value="话题">话题</option>
+                    <option value="圈子">圈子</option>
+                </select>
+                <input type="text" class="text" placeholder="华为p9plus 买疯啦">
+                <input type="submit" class="submit" value="搜索">
+                <ul>
+                    <li><a href="javascript:;">省100元</a></li>
+                    <li><a href="javascript:;">省100元</a></li>
+                    <li><a href="javascript:;">省100元</a></li>
+                    <li><a href="javascript:;">省100元</a></li>
+                    <li><a href="javascript:;">省100元</a></li>
+                    <li><a href="javascript:;">省100元</a></li>
+                    <li><a href="javascript:;">省100元</a></li>
+                    <li><a href="javascript:;">省100元</a></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <div class="fast_link_bg">
+        <div class="fast_link">
+            <h3>全部商品分类</h3>
+            <ul>
+                <li><a href="javascript:;">圈子</a></li>
+                <li><a href="javascript:;">真划算</a></li>
+                <li><a href="javascript:;">圈子</a></li>
+                <li><a href="javascript:;">圈子</a></li>
+                <li><a href="javascript:;">橙电气</a></li>
+                <li><a href="javascript:;">圈子</a></li>
+                <li><a href="javascript:;">药品信息</a></li>
+                <li><a href="javascript:;">圈子</a></li>
+                <li><a href="javascript:;">圈子</a></li>
+                <li><a href="javascript:;">药品信息</a></li>
+                <li><a href="javascript:;">圈子</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner_bg">
+        <div id="carousel-example-generic-1" class="carousel slide sn-banner" data-ride="carousel">
+            <ol class="carousel-indicators sn-banner-point">
+                <li data-target="#carousel-example-generic-1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic-1" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic-1" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner sn-banner-picBox" role="listbox">
+                <div class="item item1 active">
+                    <img src="imgs/banner_1_1.jpg"/>
+                </div>
+                <div class="item item2">
+                    <img src="imgs/banner_1_2.jpg"/>
+                </div>
+                <div class="item item3">
+                    <img src="imgs/banner_1_3.jpg"/>
+                </div>
+            </div>
+            <div class="control-box">
+                <a class="left carousel-control sn-banner-control-left" href="#carousel-example-generic-1" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control sn-banner-control-right" href="#carousel-example-generic-1" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="con1_bg">
+        <div class="con1">
+            <div class="content">
+                <h3>淘~实惠<span>BARGANIS</span></h3>
+                <div>
+                    <div class="left">
+                        <a href="javascript:;">
+                            <img src="imgs/con1_left.png">
+                        </a>
+                    </div>
+                    <div class="right">
+                        <img src="imgs/con1_right_1.jpg">
+                        <img src="imgs/con1_right_2.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <h3>淘~实惠<span>BARGANIS</span></h3>
+                <div>
+                    <div class="left">
+                        <a href="javascript:;">
+                            <img src="imgs/con1_left.png">
+                        </a>
+                    </div>
+                    <div class="right">
+                        <img src="imgs/con1_right_1.jpg">
+                        <img src="imgs/con1_right_2.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <h3>淘~实惠<span>BARGANIS</span></h3>
+                <div>
+                    <div class="left">
+                        <a href="javascript:;">
+                            <img src="imgs/con1_left.png">
+                        </a>
+                    </div>
+                    <div class="right">
+                        <img src="imgs/con1_right_1.jpg">
+                        <img src="imgs/con1_right_2.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="advert1_bg">
+        <div class="advert1">
+            <ul>
+                <li class="advert1_1"><a href="javascript:;"><img src="imgs/advert1_1.jpg"></a></li>
+                <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                <li><a href="javascript:;"><img src="imgs/advert1_3.jpg"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="finance_bg">
+        <div class="finance">
+            <h2>金融<span>FINANCE</span></h2>
+            <ul>
+                <li><a href="javascript:;"><img src="imgs/finance_1.jpg"></a></li>
+                <li><a href="javascript:;"><img src="imgs/finance_2.jpg"></a></li>
+                <li><a href="javascript:;"><img src="imgs/finance_2.jpg"></a></li>
+                <li><a href="javascript:;"><img src="imgs/finance_2.jpg"></a></li>
+                <li><a href="javascript:;"><img src="imgs/finance_2.jpg"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="maylike_bg">
+        <div class="maylike">
+            <h2>猜你喜欢<span>MAY YOU LIKE</span></h2>
+            <ul>
+                <li>
+                    <a href="javascript:;">
+                        <img src="imgs/like.jpg">
+                        <p>雅芳小红裙走珠香水9ml</p>
+                        <span>¥ 19.00</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="imgs/like.jpg">
+                        <p>雅芳小红裙走珠香水9ml</p>
+                        <span>¥ 19.00</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="imgs/like.jpg">
+                        <p>雅芳小红裙走珠香水9ml</p>
+                        <span>¥ 19.00</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="imgs/like.jpg">
+                        <p>雅芳小红裙走珠香水9ml</p>
+                        <span>¥ 19.00</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="imgs/like.jpg">
+                        <p>雅芳小红裙走珠香水9ml</p>
+                        <span>¥ 19.00</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="market_bg">
+        <div class="market">
+            <div class="content">
+                <div class="con_left">
+                    <h3>1F 手机通讯</h3>
+                    <div>
+                        <div class="con_left_con1">
+                            <ul>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                            </ul>
+                            <ul class="mid">
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                            </ul>
+                        </div>
+                        <div class="con_left_con2">
+                           <div id="carousel-example-generic-1" class="carousel slide sn-banner" data-ride="carousel">
+                            <ol class="carousel-indicators sn-banner-point">
+                                <li data-target="#carousel-example-generic-1" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic-1" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic-1" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner sn-banner-picBox" role="listbox">
+                                <div class="item item1 active">
+                                    <img src="imgs/banner_1_1.jpg"/>
+                                </div>
+                                <div class="item item2">
+                                    <img src="imgs/banner_1_2.jpg"/>
+                                </div>
+                                <div class="item item3">
+                                    <img src="imgs/banner_1_3.jpg"/>
+                                </div>
+                            </div>
+                            <div class="control-box">
+                                <a class="left carousel-control sn-banner-control-left" href="#carousel-example-generic-1" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control sn-banner-control-right" href="#carousel-example-generic-1" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="con_right">
+                    <h3>
+                        <ul>
+                            <li class="active">精选热卖</li>
+                            <li>时尚新品</li>
+                            <li>加价换购</li>
+                            <li>唱响低价</li>
+                            <li>手机配件</li>
+                            <li>精选店铺</li>
+                            <li>精选单品</li>
+                        </ul>
+                    </h3>
+                    <ul class="active">
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="advert1_bg">
+                <div class="advert1">
+                    <ul>
+                        <li class="advert1_1"><a href="javascript:;"><img src="imgs/advert1_1.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="imgs/advert1_3.jpg"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="con_left">
+                    <h3>2F 电脑数码</h3>
+                    <div>
+                        <div class="con_left_con1">
+                            <ul>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                            </ul>
+                            <ul class="mid">
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                            </ul>
+                        </div>
+                        <div class="con_left_con2"></div>
+                    </div>
+                </div>
+                <div class="con_right">
+                    <h3>
+                        <ul>
+                            <li class="active">精选热卖</li>
+                            <li>时尚新品</li>
+                            <li>加价换购</li>
+                            <li>唱响低价</li>
+                            <li>手机配件</li>
+                            <li>精选店铺</li>
+                            <li>精选单品</li>
+                        </ul>
+                    </h3>
+                    <ul class="active">
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="advert1_bg">
+                <div class="advert1">
+                    <ul>
+                        <li class="advert1_1"><a href="javascript:;"><img src="imgs/advert1_1.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="imgs/advert1_3.jpg"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="con_left">
+                    <h3>3F 家用电气</h3>
+                    <div>
+                        <div class="con_left_con1">
+                            <ul>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                            </ul>
+                            <ul class="mid">
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                            </ul>
+                        </div>
+                        <div class="con_left_con2"></div>
+                    </div>
+                </div>
+                <div class="con_right">
+                    <h3>
+                        <ul>
+                            <li class="active">精选热卖</li>
+                            <li>时尚新品</li>
+                            <li>加价换购</li>
+                            <li>唱响低价</li>
+                            <li>手机配件</li>
+                            <li>精选店铺</li>
+                            <li>精选单品</li>
+                        </ul>
+                    </h3>
+                    <ul class="active">
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="advert1_bg">
+                <div class="advert1">
+                    <ul>
+                        <li class="advert1_1"><a href="javascript:;"><img src="imgs/advert1_1.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="imgs/advert1_3.jpg"></a></li>
+                    </ul>
+                </div>
+            </div><div class="advert1_bg">
+                <div class="advert1">
+                    <ul>
+                        <li class="advert1_1"><a href="javascript:;"><img src="imgs/advert1_1.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="imgs/advert1_3.jpg"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="con_left">
+                    <h3>4F 厨房卫浴</h3>
+                    <div>
+                        <div class="con_left_con1">
+                            <ul>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                            </ul>
+                            <ul class="mid">
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                            </ul>
+                        </div>
+                        <div class="con_left_con2"></div>
+                    </div>
+                </div>
+                <div class="con_right">
+                    <h3>
+                        <ul>
+                            <li class="active">精选热卖</li>
+                            <li>时尚新品</li>
+                            <li>加价换购</li>
+                            <li>唱响低价</li>
+                            <li>手机配件</li>
+                            <li>精选店铺</li>
+                            <li>精选单品</li>
+                        </ul>
+                    </h3>
+                    <ul class="active">
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="advert1_bg">
+                <div class="advert1">
+                    <ul>
+                        <li class="advert1_1"><a href="javascript:;"><img src="imgs/advert1_1.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="imgs/advert1_3.jpg"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="con_left">
+                    <h3>5F 国美超市</h3>
+                    <div>
+                        <div class="con_left_con1">
+                            <ul>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                            </ul>
+                            <ul class="mid">
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                            </ul>
+                        </div>
+                        <div class="con_left_con2"></div>
+                    </div>
+                </div>
+                <div class="con_right">
+                    <h3>
+                        <ul>
+                            <li class="active">精选热卖</li>
+                            <li>时尚新品</li>
+                            <li>加价换购</li>
+                            <li>唱响低价</li>
+                            <li>手机配件</li>
+                            <li>精选店铺</li>
+                            <li>精选单品</li>
+                        </ul>
+                    </h3>
+                    <ul class="active">
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="advert1_bg">
+                <div class="advert1">
+                    <ul>
+                        <li class="advert1_1"><a href="javascript:;"><img src="imgs/advert1_1.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="imgs/advert1_3.jpg"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="con_left">
+                    <h3>6F 鞋包服饰</h3>
+                    <div>
+                        <div class="con_left_con1">
+                            <ul>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                            </ul>
+                            <ul class="mid">
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                            </ul>
+                        </div>
+                        <div class="con_left_con2"></div>
+                    </div>
+                </div>
+                <div class="con_right">
+                    <h3>
+                        <ul>
+                            <li class="active">精选热卖</li>
+                            <li>时尚新品</li>
+                            <li>加价换购</li>
+                            <li>唱响低价</li>
+                            <li>手机配件</li>
+                            <li>精选店铺</li>
+                            <li>精选单品</li>
+                        </ul>
+                    </h3>
+                    <ul class="active">
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="advert1_bg">
+                <div class="advert1">
+                    <ul>
+                        <li class="advert1_1"><a href="javascript:;"><img src="imgs/advert1_1.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="imgs/advert1_3.jpg"></a></li>
+                    </ul>
+                </div>
+            </div><div class="advert1_bg">
+                <div class="advert1">
+                    <ul>
+                        <li class="advert1_1"><a href="javascript:;"><img src="imgs/advert1_1.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="imgs/advert1_3.jpg"></a></li>
+                    </ul>
+                </div>
+            </div><div class="advert1_bg">
+                <div class="advert1">
+                    <ul>
+                        <li class="advert1_1"><a href="javascript:;"><img src="imgs/advert1_1.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="imgs/advert1_3.jpg"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="con_left">
+                    <h3>7F 家居家装</h3>
+                    <div>
+                        <div class="con_left_con1">
+                            <ul>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                            </ul>
+                            <ul class="mid">
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                            </ul>
+                        </div>
+                        <div class="con_left_con2"></div>
+                    </div>
+                </div>
+                <div class="con_right">
+                    <h3>
+                        <ul>
+                            <li class="active">精选热卖</li>
+                            <li>时尚新品</li>
+                            <li>加价换购</li>
+                            <li>唱响低价</li>
+                            <li>手机配件</li>
+                            <li>精选店铺</li>
+                            <li>精选单品</li>
+                        </ul>
+                    </h3>
+                    <ul class="active">
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="advert1_bg">
+                <div class="advert1">
+                    <ul>
+                        <li class="advert1_1"><a href="javascript:;"><img src="imgs/advert1_1.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="imgs/advert1_3.jpg"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="con_left">
+                    <h3>8F 汽车用品</h3>
+                    <div>
+                        <div class="con_left_con1">
+                            <ul>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                            </ul>
+                            <ul class="mid">
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                            </ul>
+                        </div>
+                        <div class="con_left_con2"></div>
+                    </div>
+                </div>
+                <div class="con_right">
+                    <h3>
+                        <ul>
+                            <li class="active">精选热卖</li>
+                            <li>时尚新品</li>
+                            <li>加价换购</li>
+                            <li>唱响低价</li>
+                            <li>手机配件</li>
+                            <li>精选店铺</li>
+                            <li>精选单品</li>
+                        </ul>
+                    </h3>
+                    <ul class="active">
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="advert1_bg">
+                <div class="advert1">
+                    <ul>
+                        <li class="advert1_1"><a href="javascript:;"><img src="imgs/advert1_1.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="imgs/advert1_3.jpg"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="con_left">
+                    <h3>9F 海外购</h3>
+                    <div>
+                        <div class="con_left_con1">
+                            <ul>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                            </ul>
+                            <ul class="mid">
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                            </ul>
+                        </div>
+                        <div class="con_left_con2"></div>
+                    </div>
+                </div>
+                <div class="con_right">
+                    <h3>
+                        <ul>
+                            <li class="active">精选热卖</li>
+                            <li>时尚新品</li>
+                            <li>加价换购</li>
+                            <li>唱响低价</li>
+                            <li>手机配件</li>
+                            <li>精选店铺</li>
+                            <li>精选单品</li>
+                        </ul>
+                    </h3>
+                    <ul class="active">
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="advert1_bg">
+                <div class="advert1">
+                    <ul>
+                        <li class="advert1_1"><a href="javascript:;"><img src="imgs/advert1_1.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li class="advert1_2"><a href="javascript:;"><img src="imgs/advert1_2.jpg"></a></li>
+                        <li><a href="javascript:;"><img src="imgs/advert1_3.jpg"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="con_left">
+                    <h3>10F 生活服务</h3>
+                    <div>
+                        <div class="con_left_con1">
+                            <ul>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                                <li><a href="javascript:;">荣耀手机</a></li>
+                            </ul>
+                            <ul class="mid">
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                                <li><a href="javascript:;">魅族</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                                <li><a href="javascript:;">小米手机</a></li>
+                            </ul>
+                        </div>
+                        <div class="con_left_con2"></div>
+                    </div>
+                </div>
+                <div class="con_right">
+                    <h3>
+                        <ul>
+                            <li class="active">精选热卖</li>
+                            <li>时尚新品</li>
+                            <li>加价换购</li>
+                            <li>唱响低价</li>
+                            <li>手机配件</li>
+                            <li>精选店铺</li>
+                            <li>精选单品</li>
+                        </ul>
+                    </h3>
+                    <ul class="active">
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con2.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con3.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con4.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con5.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con6.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con7.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="imgs/con8.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/public.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>

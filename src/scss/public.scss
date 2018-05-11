@@ -1,0 +1,80 @@
+//scss File for all page
+body,div,p,h1,h2,h3,h4,h5,h6,hr,ul,li,ol,dl,dd,dt,table,input,textarea,fieldset,form,tr,td,th,legend{
+    margin:0;
+    padding: 0;
+}
+ul,ol,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+img,input{
+    outline: none;
+}
+img{
+    border:none;
+}
+
+//style for all *bg
+@mixin bg($background,$height) {
+    width:100%;
+    height:$height;
+    background: $background;
+}
+@mixin con($background,$height) {
+    width:1200px;
+    margin:0 auto;
+    height:$height;
+    background: $background;
+}
+$bgcolor:#f7f7f7;
+$pink:#f4034a;
+
+//style for header bar
+.header_bg{
+    @include bg($bgcolor,30px);
+    border-bottom: 1px solid #f2f2f2;
+    .header{
+        @include con($bgcolor,30px);
+        .header_left{
+            width:250px;
+            height:30px;
+            float:left;
+            li{
+                height: 30px;
+                padding: 0 11px;
+                float: left;
+                line-height: 30px;
+                color:#878787;
+                font-size: 12px;
+                cursor:pointer;
+                .login{
+                    color: #878787;
+                }
+                .regeist{
+                    color:$pink;
+                }
+                .glyphicon-certificate{
+                    color:$pink;
+                }
+            }
+        }
+        .header_right{
+            width:500px;
+            float:right;
+            li{
+                height: 30px;
+                padding: 0 11px;
+                float: left;
+                line-height: 30px;
+                color:#878787;
+                font-size: 12px;
+                cursor:pointer;
+            }
+        }
+    }
+}

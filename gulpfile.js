@@ -15,11 +15,14 @@ gulp.task('jsmin',() => {
 
 // 压缩css文件配置
 gulp.task('cssmin',() => {
-    gulp.src('./src/scss/*.scss')
-        .pipe(sass())  //sass转css
-        .pipe(css())   //压缩
-        .pipe(gulp.dest('./cause/css'))
-        .pipe(connect.reload());
+       gulp.src('./src/scss/*.scss')
+           .pipe(sass())
+           .on('error',function (error) {
+            console.log(error);
+           })
+           .pipe(css())   //压缩
+           .pipe(gulp.dest('./cause/css'))
+           .pipe(connect.reload());
 });
 
 // 压缩js文件配置
@@ -38,7 +41,7 @@ gulp.task('default', () => {
     });
     // 监听scss文件
     gulp.watch('./src/scss/*.scss',['cssmin'],() => {
-        console.log('scss文件改动,已压缩');
+        console.log('css文件改动,已压缩');
     });
     // 监听html文件
     gulp.watch('./src/*.html',['htmlmin'],() => {
