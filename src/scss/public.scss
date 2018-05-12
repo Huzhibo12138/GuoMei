@@ -52,6 +52,7 @@ $pink:#f4034a;
                 color:#878787;
                 font-size: 12px;
                 cursor:pointer;
+                position: relative;
                 .login{
                     color: #878787;
                 }
@@ -60,6 +61,17 @@ $pink:#f4034a;
                 }
                 .glyphicon-certificate{
                     color:$pink;
+                }
+                ul{
+                    position: absolute;
+                    left:0;
+                    top:30px;
+                    width:320px;
+                    height: 200px;
+                    z-index: 10;
+                    border: 1px solid #eee;
+                    background: #fefefe;
+                    display: none;
                 }
             }
         }
@@ -74,7 +86,34 @@ $pink:#f4034a;
                 color:#878787;
                 font-size: 12px;
                 cursor:pointer;
+                position: relative;
+                a{
+                    color:#878787;
+                }
+                ul{
+                    position: absolute;
+                    left:0;
+                    top:30px;
+                    width:320px;
+                    height: 200px;
+                    z-index: 10;
+                    border: 1px solid #eee;
+                    background: #fefefe;
+                    display: none;
+                }
+            }
+            .last{
+                ul{
+                    left:-230px;
+                }
+            }
+            li:hover{
+                background: #fefefe;
+                a{
+                    color:$pink;
+                }
             }
         }
     }
 }
+

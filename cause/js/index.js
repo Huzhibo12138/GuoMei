@@ -1,1 +1,1 @@
-$("#carousel-example-generic-1").carousel({interval:2e3});
+$("#carousel-example-generic-1").carousel({interval:2e3});var obj=new SearchData($(".searchOne"));header(),$("body").scrollspy({target:"#leftBar"}),document.onscroll=function(e){600<=$(window).scrollTop()?$(".topBar").slideDown():$(".topBar").slideUp(),1900<=$(window).scrollTop()?$(".leftBar").slideDown():$(".leftBar").slideUp()};

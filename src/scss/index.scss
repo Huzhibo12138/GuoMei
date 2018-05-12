@@ -30,6 +30,7 @@ $pink:#f4034a;
             width:500px;
             margin-left: 141px;
             font-size: 0;
+            position:relative;
             select{
                 width:62px;
                 height:32px;
@@ -63,7 +64,36 @@ $pink:#f4034a;
                 font-size: 16px;
                 color:#fefefe;
             }
-            ul{
+            .showBox{
+                position: absolute;
+                left:0;
+                top:32px;
+                z-index: 10;
+                background: #fefefe;
+                display: none;
+                ul{
+                    width:406px;
+                    border:1px solid #cbcbcb;
+                    li{
+                        width:100%;
+                        height: 28px;
+                        line-height: 28px;
+                        a{
+                            font-size: 12px;
+                            width:100%;
+                            height:100%;
+                            display: block;
+                            color: #5d5d5d;
+                            text-indent: 12px;
+                            span{
+                                float: right;
+                                margin-right: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+            >ul{
                 li{
                     float: left;
                     margin:8px 5px 0;
@@ -353,7 +383,57 @@ $pink:#f4034a;
                         width:390px;
                         height:470px;
                         float:left;
-                        background: red;
+                        .sn-banner{
+                            width:100%;
+                            .item {
+                                img{
+                                    width:100%;
+                                    height:470px;
+                                }
+                                .banner_box{
+                                    width:360px;
+                                    height:100px;
+                                    position: absolute;
+                                    left:0;
+                                    right:0;
+                                    margin:0 auto;
+                                    bottom:10px;
+                                    a{
+                                        display: block;
+                                        width: 120px;
+                                        height:50px;
+                                        float: left;
+                                        img{
+                                            width:119px;
+                                            height:49px;
+                                        }
+                                    }
+                                }
+                            }
+                            ol{
+                                bottom:127px;
+                                li{
+                                    width:18px;
+                                    height:4px;
+                                    background: #9fafc8;
+                                    border:none;
+                                    border-radius: 0!important;
+                                }
+                                .active{
+                                    background: #f4034a;
+                                }
+                            }
+                            .control-box{
+                                // display: none;
+                                .carousel-control{
+                                    width:30px;
+                                    height:60px;
+                                    background: rgba(0,0,0,0.6);
+                                    top:210px;
+                                    line-height: 60px;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -400,4 +480,110 @@ $pink:#f4034a;
             }
         }
     }
+}
+
+.topBar{
+    width:100%;
+    min-width: 1200px;
+    height:50px;
+    background: rgba(255,255,255,0.9);
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: 1000;
+    display: none;
+    form{
+        width:500px;
+        margin: 8px auto 0;
+        font-size: 0;
+        position:relative;
+        select{
+            width:62px;
+            height:32px;
+            border:1px solid #dd09a5;
+            font-size: 12px;
+            color:#a4a4a4;
+            cursor: pointer;
+            text-indent: 9px;
+            float: left;
+            option{
+                font-size: 12px;
+                cursor: pointer;
+            }
+        }
+        .text{
+            width:345px;
+            height:32px;
+            border:1px solid #dd09a5;
+            float: left;
+            border-left: none;
+            font-size: 12px;
+            color:#a4a4a4;
+            text-indent: 10px;
+        }
+        .submit{
+            width:90px;
+            height:32px;
+            float: left;
+            border:none;
+            background: #dd09a5;
+            font-size: 16px;
+            color:#fefefe;
+        }
+    }
+}
+
+.leftBar{
+    width:66px;
+    height:472px;
+    border:1px solid #e5e5e5;
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:36px;
+    margin: auto 0;
+    z-index: 2000;
+    display: none;
+    ul{
+        background: #f5f5f5;
+        text-align: center;
+        p{
+            height:40px;
+            width: 100%;
+            font-weight: 900;
+            line-height: 40px;
+            font-size: 12px;
+        }
+        li{
+            height:43px;
+            border-top:1px solid #e5e5e5;
+            font-size: 12px;
+            a{
+                display: block;
+                color:#767676;
+                padding: 0;
+                span{
+                    display: block;
+                    padding-top: 5px;
+                }
+            }
+        }
+        .active{
+            background: #fefefe;
+            a{
+                color:#f4034a;
+            }
+        }
+    }
+}
+
+.rightBar{
+    width:35px;
+    height:100%;
+    background: #5b5b5b;
+    position: fixed;
+    right:0;
+    top:0;
+    bottom:0;
+    margin: auto 0;
 }

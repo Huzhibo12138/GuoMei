@@ -9,21 +9,25 @@
 <link rel="stylesheet" type="text/css" href="css/public.css">
 <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
-<body>
+<body  data-spy="scroll" data-target="#leftBar">
     <div class="header_bg">
         <div class="header">
             <ul class="header_left">
-                <li>国美会员<i class="glyphicon glyphicon-menu-down"></i></li>
+                <li>国美会员<i class="glyphicon glyphicon-menu-down"></i>
+                    <ul></ul>
+                </li>
                 <li><a href="javscript:;" class="login">登录</a></li>
                 <li><a href="javscript:;" class="regeist">注册有礼</a><i class="glyphicon glyphicon-certificate"></i></li>
             </ul>
             <ul class="header_right">
-                <li><a href="javascript:;">我的订单</a></li>
-                <li><a href="javascript:;">我的国美</a><i class="glyphicon glyphicon-menu-down"></i></li>
+                <li><a href="javascript:;">我的订单</a>
+                    <ul></ul>
+                </li>
+                <li><a href="javascript:;">我的国美</a><i class="glyphicon glyphicon-menu-down"></i><ul></ul></li>
                 <li><a href="javascript:;">企业采购</a></li>
-                <li><a href="javascript:;">服务中心</a><i class="glyphicon glyphicon-menu-down"></i></li>
-                <li><a href="javascript:;">网站导航</a><i class="glyphicon glyphicon-menu-down"></i></li>
-                <li><a href="javascript:;">手机国美</a><i class="glyphicon glyphicon-menu-down"></i></li>
+                <li><a href="javascript:;">服务中心</a><i class="glyphicon glyphicon-menu-down"></i><ul></ul></li>
+                <li class="last"><a href="javascript:;">网站导航</a><i class="glyphicon glyphicon-menu-down"></i><ul></ul></li>
+                <li  class="last"><a href="javascript:;">手机国美</a><i class="glyphicon glyphicon-menu-down"></i><ul></ul></li>
             </ul>
         </div>
     </div>
@@ -31,7 +35,7 @@
         <div class="search">
             <a href="javascript:;" class="logo"></a>
             <img class="movelogo" src="imgs/T1SgL_BjAT1RCvBVdK.gif"/>
-            <form action="">
+            <form action="" class="searchOne">
                 <select name="" id="">
                     <option value="商品">商品</option>
                     <option value="店铺">店铺</option>
@@ -40,6 +44,9 @@
                 </select>
                 <input type="text" class="text" placeholder="华为p9plus 买疯啦">
                 <input type="submit" class="submit" value="搜索">
+                <div class="showBox">
+                    <ul></ul>
+                </div>
                 <ul>
                     <li><a href="javascript:;">省100元</a></li>
                     <li><a href="javascript:;">省100元</a></li>
@@ -216,7 +223,7 @@
     </div>
     <div class="market_bg">
         <div class="market">
-            <div class="content">
+            <div class="content" id="mobile">
                 <div class="con_left">
                     <h3>1F 手机通讯</h3>
                     <div>
@@ -244,34 +251,94 @@
                             </ul>
                         </div>
                         <div class="con_left_con2">
-                           <div id="carousel-example-generic-1" class="carousel slide sn-banner" data-ride="carousel">
-                            <ol class="carousel-indicators sn-banner-point">
-                                <li data-target="#carousel-example-generic-1" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-example-generic-1" data-slide-to="1"></li>
-                                <li data-target="#carousel-example-generic-1" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner sn-banner-picBox" role="listbox">
-                                <div class="item item1 active">
-                                    <img src="imgs/banner_1_1.jpg"/>
+                            <div id="carousel-example-generic-2" class="carousel slide sn-banner" data-ride="carousel">
+                                <ol class="carousel-indicators sn-banner-point">
+                                    <li data-target="#carousel-example-generic-2" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic-2" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic-2" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner sn-banner-picBox" role="listbox">
+                                    <div class="item item1 active">
+                                        <a href="javascript:;"><img src="imgs/banner_2_1.jpg"/></a>
+                                        <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item item2">
+                                        <a href="javascript:;"><img src="imgs/banner_2_2.jpg"/></a>
+                                         <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item item3">
+                                        <a href="javascript:;"><img src="imgs/banner_2_3.jpg"/></a>
+                                         <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="item item2">
-                                    <img src="imgs/banner_1_2.jpg"/>
-                                </div>
-                                <div class="item item3">
-                                    <img src="imgs/banner_1_3.jpg"/>
+                                <div class="control-box">
+                                    <a class="left carousel-control sn-banner-control-left" href="#carousel-example-generic-2" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control sn-banner-control-right" href="#carousel-example-generic-2" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="control-box">
-                                <a class="left carousel-control sn-banner-control-left" href="#carousel-example-generic-1" role="button" data-slide="prev">
-                                    <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="right carousel-control sn-banner-control-right" href="#carousel-example-generic-1" role="button" data-slide="next">
-                                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div>
-        </div>
                         </div>
                     </div>
                 </div>
@@ -526,7 +593,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="content">
+            <div class="content" id="computer">
                 <div class="con_left">
                     <h3>2F 电脑数码</h3>
                     <div>
@@ -553,7 +620,96 @@
                                 <li><a href="javascript:;">小米手机</a></li>
                             </ul>
                         </div>
-                        <div class="con_left_con2"></div>
+                        <div class="con_left_con2">
+                            <div id="carousel-example-generic-3" class="carousel slide sn-banner" data-ride="carousel">
+                                <ol class="carousel-indicators sn-banner-point">
+                                    <li data-target="#carousel-example-generic-3" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic-3" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic-3" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner sn-banner-picBox" role="listbox">
+                                    <div class="item item1 active">
+                                        <a href="javascript:;"><img src="imgs/banner_2_1.jpg"/></a>
+                                        <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item item2">
+                                        <a href="javascript:;"><img src="imgs/banner_2_2.jpg"/></a>
+                                         <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item item3">
+                                        <a href="javascript:;"><img src="imgs/banner_2_3.jpg"/></a>
+                                         <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-box">
+                                    <a class="left carousel-control sn-banner-control-left" href="#carousel-example-generic-3" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control sn-banner-control-right" href="#carousel-example-generic-3" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="con_right">
@@ -807,7 +963,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="content">
+            <div class="content" id="electric">
                 <div class="con_left">
                     <h3>3F 家用电气</h3>
                     <div>
@@ -834,7 +990,96 @@
                                 <li><a href="javascript:;">小米手机</a></li>
                             </ul>
                         </div>
-                        <div class="con_left_con2"></div>
+                        <div class="con_left_con2">
+                            <div id="carousel-example-generic-4" class="carousel slide sn-banner" data-ride="carousel">
+                                <ol class="carousel-indicators sn-banner-point">
+                                    <li data-target="#carousel-example-generic-4" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic-4" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic-4" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner sn-banner-picBox" role="listbox">
+                                    <div class="item item1 active">
+                                        <a href="javascript:;"><img src="imgs/banner_2_1.jpg"/></a>
+                                        <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item item2">
+                                        <a href="javascript:;"><img src="imgs/banner_2_2.jpg"/></a>
+                                         <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item item3">
+                                        <a href="javascript:;"><img src="imgs/banner_2_3.jpg"/></a>
+                                         <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-box">
+                                    <a class="left carousel-control sn-banner-control-left" href="#carousel-example-generic-4" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control sn-banner-control-right" href="#carousel-example-generic-4" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="con_right">
@@ -1100,7 +1345,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="content">
+            <div class="content" id="wash">
                 <div class="con_left">
                     <h3>4F 厨房卫浴</h3>
                     <div>
@@ -1127,7 +1372,96 @@
                                 <li><a href="javascript:;">小米手机</a></li>
                             </ul>
                         </div>
-                        <div class="con_left_con2"></div>
+                        <div class="con_left_con2">
+                            <div id="carousel-example-generic-5" class="carousel slide sn-banner" data-ride="carousel">
+                                <ol class="carousel-indicators sn-banner-point">
+                                    <li data-target="#carousel-example-generic-5" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic-5" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic-5" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner sn-banner-picBox" role="listbox">
+                                    <div class="item item1 active">
+                                        <a href="javascript:;"><img src="imgs/banner_2_1.jpg"/></a>
+                                        <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item item2">
+                                        <a href="javascript:;"><img src="imgs/banner_2_2.jpg"/></a>
+                                         <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item item3">
+                                        <a href="javascript:;"><img src="imgs/banner_2_3.jpg"/></a>
+                                         <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-box">
+                                    <a class="left carousel-control sn-banner-control-left" href="#carousel-example-generic-5" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control sn-banner-control-right" href="#carousel-example-generic-5" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="con_right">
@@ -1381,7 +1715,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="content">
+            <div class="content" id="guomeiMarket">
                 <div class="con_left">
                     <h3>5F 国美超市</h3>
                     <div>
@@ -1408,7 +1742,96 @@
                                 <li><a href="javascript:;">小米手机</a></li>
                             </ul>
                         </div>
-                        <div class="con_left_con2"></div>
+                        <div class="con_left_con2">
+                            <div id="carousel-example-generic-6" class="carousel slide sn-banner" data-ride="carousel">
+                                <ol class="carousel-indicators sn-banner-point">
+                                    <li data-target="#carousel-example-generic-6" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic-6" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic-6" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner sn-banner-picBox" role="listbox">
+                                    <div class="item item1 active">
+                                        <a href="javascript:;"><img src="imgs/banner_2_1.jpg"/></a>
+                                        <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item item2">
+                                        <a href="javascript:;"><img src="imgs/banner_2_2.jpg"/></a>
+                                         <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item item3">
+                                        <a href="javascript:;"><img src="imgs/banner_2_3.jpg"/></a>
+                                         <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-box">
+                                    <a class="left carousel-control sn-banner-control-left" href="#carousel-example-generic-6" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control sn-banner-control-right" href="#carousel-example-generic-6" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="con_right">
@@ -1662,7 +2085,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="content">
+            <div class="content" id="guomeiMarket">
                 <div class="con_left">
                     <h3>6F 鞋包服饰</h3>
                     <div>
@@ -1689,7 +2112,96 @@
                                 <li><a href="javascript:;">小米手机</a></li>
                             </ul>
                         </div>
-                        <div class="con_left_con2"></div>
+                        <div class="con_left_con2">
+                            <div id="carousel-example-generic-7" class="carousel slide sn-banner" data-ride="carousel">
+                                <ol class="carousel-indicators sn-banner-point">
+                                    <li data-target="#carousel-example-generic-7" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic-7" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic-7" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner sn-banner-picBox" role="listbox">
+                                    <div class="item item1 active">
+                                        <a href="javascript:;"><img src="imgs/banner_2_1.jpg"/></a>
+                                        <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item item2">
+                                        <a href="javascript:;"><img src="imgs/banner_2_2.jpg"/></a>
+                                         <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item item3">
+                                        <a href="javascript:;"><img src="imgs/banner_2_3.jpg"/></a>
+                                         <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-box">
+                                    <a class="left carousel-control sn-banner-control-left" href="#carousel-example-generic-7" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control sn-banner-control-right" href="#carousel-example-generic-7" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="con_right">
@@ -1967,7 +2479,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="content">
+            <div class="content" id="shows">
                 <div class="con_left">
                     <h3>7F 家居家装</h3>
                     <div>
@@ -1994,7 +2506,96 @@
                                 <li><a href="javascript:;">小米手机</a></li>
                             </ul>
                         </div>
-                        <div class="con_left_con2"></div>
+                        <div class="con_left_con2">
+                            <div id="carousel-example-generic-8" class="carousel slide sn-banner" data-ride="carousel">
+                                <ol class="carousel-indicators sn-banner-point">
+                                    <li data-target="#carousel-example-generic-8" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic-8" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic-8" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner sn-banner-picBox" role="listbox">
+                                    <div class="item item1 active">
+                                        <a href="javascript:;"><img src="imgs/banner_2_1.jpg"/></a>
+                                        <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item item2">
+                                        <a href="javascript:;"><img src="imgs/banner_2_2.jpg"/></a>
+                                         <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item item3">
+                                        <a href="javascript:;"><img src="imgs/banner_2_3.jpg"/></a>
+                                         <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-box">
+                                    <a class="left carousel-control sn-banner-control-left" href="#carousel-example-generic-8" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control sn-banner-control-right" href="#carousel-example-generic-8" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="con_right">
@@ -2248,7 +2849,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="content">
+            <div class="content" id="cars">
                 <div class="con_left">
                     <h3>8F 汽车用品</h3>
                     <div>
@@ -2275,7 +2876,96 @@
                                 <li><a href="javascript:;">小米手机</a></li>
                             </ul>
                         </div>
-                        <div class="con_left_con2"></div>
+                        <div class="con_left_con2">
+                            <div id="carousel-example-generic-9" class="carousel slide sn-banner" data-ride="carousel">
+                                <ol class="carousel-indicators sn-banner-point">
+                                    <li data-target="#carousel-example-generic-9" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic-9" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic-9" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner sn-banner-picBox" role="listbox">
+                                    <div class="item item1 active">
+                                        <a href="javascript:;"><img src="imgs/banner_2_1.jpg"/></a>
+                                        <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item item2">
+                                        <a href="javascript:;"><img src="imgs/banner_2_2.jpg"/></a>
+                                         <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item item3">
+                                        <a href="javascript:;"><img src="imgs/banner_2_3.jpg"/></a>
+                                         <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-box">
+                                    <a class="left carousel-control sn-banner-control-left" href="#carousel-example-generic-9" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control sn-banner-control-right" href="#carousel-example-generic-9" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="con_right">
@@ -2529,7 +3219,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="content">
+            <div class="content" id="oversea">
                 <div class="con_left">
                     <h3>9F 海外购</h3>
                     <div>
@@ -2556,7 +3246,96 @@
                                 <li><a href="javascript:;">小米手机</a></li>
                             </ul>
                         </div>
-                        <div class="con_left_con2"></div>
+                        <div class="con_left_con2">
+                            <div id="carousel-example-generic-10" class="carousel slide sn-banner" data-ride="carousel">
+                                <ol class="carousel-indicators sn-banner-point">
+                                    <li data-target="#carousel-example-generic-10" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic-10" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic-10" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner sn-banner-picBox" role="listbox">
+                                    <div class="item item1 active">
+                                        <a href="javascript:;"><img src="imgs/banner_2_1.jpg"/></a>
+                                        <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item item2">
+                                        <a href="javascript:;"><img src="imgs/banner_2_2.jpg"/></a>
+                                         <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item item3">
+                                        <a href="javascript:;"><img src="imgs/banner_2_3.jpg"/></a>
+                                         <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-box">
+                                    <a class="left carousel-control sn-banner-control-left" href="#carousel-example-generic-10" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control sn-banner-control-right" href="#carousel-example-generic-10" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="con_right">
@@ -2810,7 +3589,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="content">
+            <div class="content" id="service">
                 <div class="con_left">
                     <h3>10F 生活服务</h3>
                     <div>
@@ -2837,7 +3616,96 @@
                                 <li><a href="javascript:;">小米手机</a></li>
                             </ul>
                         </div>
-                        <div class="con_left_con2"></div>
+                        <div class="con_left_con2">
+                            <div id="carousel-example-generic-11" class="carousel slide sn-banner" data-ride="carousel">
+                                <ol class="carousel-indicators sn-banner-point">
+                                    <li data-target="#carousel-example-generic-11" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic-11" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic-11" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner sn-banner-picBox" role="listbox">
+                                    <div class="item item1 active">
+                                        <a href="javascript:;"><img src="imgs/banner_2_1.jpg"/></a>
+                                        <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item item2">
+                                        <a href="javascript:;"><img src="imgs/banner_2_2.jpg"/></a>
+                                         <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item item3">
+                                        <a href="javascript:;"><img src="imgs/banner_2_3.jpg"/></a>
+                                         <div class="banner_box">
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                            <a href="javascript:;">
+                                                <img src="imgs/baner_box_3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-box">
+                                    <a class="left carousel-control sn-banner-control-left" href="#carousel-example-generic-11" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control sn-banner-control-right" href="#carousel-example-generic-11" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="con_right">
@@ -3079,6 +3947,36 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="topBar">
+         <form action="" class="searchOne">
+            <select name="" id="">
+                <option value="商品">商品</option>
+                <option value="店铺">店铺</option>
+                <option value="话题">话题</option>
+                <option value="圈子">圈子</option>
+            </select>
+            <input type="text" class="text" placeholder="华为p9plus 买疯啦">
+            <input type="submit" class="submit" value="搜索">
+        </form>
+    </div>
+    <div class="leftBar" id="leftBar">
+         <ul class="nav" role="tablist">
+            <p>楼层导航</p>
+            <li class="active"><a href="#mobile"><span>1F</span> 手机通讯</a></li>
+            <li><a href="#computer"><span>2F</span> 电脑数码</a></li>
+            <li><a href="#electric "><span>3F</span> 家用电器</a></li>
+            <li><a href="#wash"><span>4F</span> 厨房卫浴</a></li>
+            <li><a href="#guomeiMarket"><span>5F</span> 国美超市</a></li>
+            <li><a href="#shows"><span>6F</span> 服饰鞋包</a></li>
+            <li><a href="#furniture"><span>7F</span> 家具家装</a></li>
+            <li><a href="#cars"><span>8F</span> 汽车用品</a></li>
+            <li><a href="#oversea"><span>9F</span> 海外购</a></li>
+            <li><a href="#service"><span>10F</span> 生活服务</a></li>
+        </ul>
+    </div>
+    <div class="rightBar">
+       
     </div>
     <script type="text/javascript" src="js/public.js"></script>
     <script type="text/javascript" src="js/index.js"></script>

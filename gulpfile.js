@@ -9,6 +9,9 @@ const gulp = require('gulp'); //gulp模块
 gulp.task('jsmin',() => {
     gulp.src('./src/js/*.js')
         .pipe(uglify())  //压缩
+        .on('error',function (error) {
+            console.log(error);
+           })
         .pipe(gulp.dest('./cause/js'))
         .pipe(connect.reload());
 });
