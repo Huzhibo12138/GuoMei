@@ -28,17 +28,60 @@ $(function() {
 	// 取消拖蓝
 	$('.move').on('selectstart',function() {return false});
 	// 滑块的移动效果
+	var nowX = null;
+	var width = null;
 	$('.block').on('mousedown',function(ev) {
-		var nowX = ev.offsetX;
-		this.onmousemove = function(ev) {
-			console.log(this.offsetParent.offsetX);
-			// $(this).css('left',x);
-			
-		}
-		$(this).on('mouseup',function() {
-			this.onmousemove = null;
-		});
+		nowX = ev.offsetX;
+		$(document).on('mousemove',start);
+		$(document).on('mouseup',end);
+		// console.log(nowX);
+		console.log(width);
 	});
-
-
+	function start(ev) {
+		width = ev.pageX - $('.block').offsetParent().offset().left - nowX;
+		if(width >= 250) {
+			width = 250;
+			$('.block').off('mousedown');
+		}
+		$('.block').css('left',width);
+		$('.moveBg').css('width',width);
+	}
+	function end() {
+		$(document).off('mousemove',start);
+		if(width < 250) {
+			$('.block').css({left:0},'slow');
+			$('.moveBg').css({width:0},'slow');
+			width = null;
+		}
+		nowX = null;
+	}
 });
+
+// function drag() {
+//     var obj = $('.block');
+//     obj.bind('mousedown', start);
+//     function start(e) {
+//         var ol = obj.offset().left;
+//         console.log(ol);
+//         deltaX = e.pageX - ol;
+//         $(document).bind({
+//             'mousemove': move,
+//             'mouseup': stop
+//         });
+//         return false;
+//     }
+//     function move(e) {
+//     	console.log(e.pageX);
+//         obj.css({
+//             // "left": (e.pageX - deltaX)
+//         });
+//         return false;
+//     }
+//     function stop() {
+//         $(document).unbind({
+//             'mousemove': move,
+//             'mouseup': stop
+//         });
+//     }
+// }
+// drag();
