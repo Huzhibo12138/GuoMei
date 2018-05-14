@@ -91,6 +91,9 @@ $pink:#f4034a;
                             }
                         }
                     }
+                    li:hover{
+                        background: #999;
+                    }
                 }
             }
             >ul{
@@ -530,6 +533,38 @@ $pink:#f4034a;
             font-size: 16px;
             color:#fefefe;
         }
+         .showBox{
+                position: absolute;
+                left:0;
+                top:32px;
+                z-index: 10;
+                background: #fefefe;
+                display: none;
+                ul{
+                    width:406px;
+                    border:1px solid #cbcbcb;
+                    li{
+                        width:100%;
+                        height: 28px;
+                        line-height: 28px;
+                        a{
+                            font-size: 12px;
+                            width:100%;
+                            height:100%;
+                            display: block;
+                            color: #5d5d5d;
+                            text-indent: 12px;
+                            span{
+                                float: right;
+                                margin-right: 12px;
+                            }
+                        }
+                    }
+                    li:hover{
+                        background: #999;
+                    }
+                }
+            }
     }
 }
 
@@ -586,4 +621,5 @@ $pink:#f4034a;
     top:0;
     bottom:0;
     margin: auto 0;
+    z-index: 3000;
 }

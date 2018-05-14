@@ -5,6 +5,8 @@ $('#carousel-example-generic-1').carousel({
 
 // 搜索框1数据
 var obj = new SearchData($('.searchOne'));
+// 搜索框1数据
+var obj = new SearchData($('.searchTwo'));
 
 // 顶部下拉效果
 header();
