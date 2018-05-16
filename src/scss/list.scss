@@ -1,0 +1,670 @@
+@mixin bg($background,$height) {
+    width:100%;
+    height:$height;
+    background: $background;
+}
+@mixin con($background,$height) {
+    width:1200px;
+    margin:0 auto;
+    height:$height;
+    background: $background;
+}
+$pink:#f4034a;
+.search_bg{
+    @include bg(#fefefe,120px);
+    .search{
+        @include con(#fefefe,120 - 33px);
+        padding-top: 33px;
+        .logo{
+            width: 125px;
+            height:56px;
+            float:left;
+            background: url("../imgs/logo.png") left top no-repeat;
+        }
+        .movelogo{
+            margin-left: 22px;
+            float: left;
+        }
+        form{
+            float: left;
+            width:500px;
+            margin-left: 141px;
+            font-size: 0;
+            position:relative;
+            select{
+                width:62px;
+                height:32px;
+                border:1px solid #dd09a5;
+                font-size: 12px;
+                color:#a4a4a4;
+                cursor: pointer;
+                text-indent: 9px;
+                float: left;
+                option{
+                    font-size: 12px;
+                    cursor: pointer;
+                }
+            }
+            .text{
+                width:345px;
+                height:32px;
+                border:1px solid #dd09a5;
+                float: left;
+                border-left: none;
+                font-size: 12px;
+                color:#a4a4a4;
+                text-indent: 10px;
+            }
+            .submit{
+                width:90px;
+                height:32px;
+                float: left;
+                border:none;
+                background: #dd09a5;
+                font-size: 16px;
+                color:#fefefe;
+            }
+            .showBox{
+                position: absolute;
+                left:0;
+                top:32px;
+                z-index: 10;
+                background: #fefefe;
+                display: none;
+                ul{
+                    width:406px;
+                    border:1px solid #cbcbcb;
+                    li{
+                        width:100%;
+                        height: 28px;
+                        line-height: 28px;
+                        a{
+                            font-size: 12px;
+                            width:100%;
+                            height:100%;
+                            display: block;
+                            color: #5d5d5d;
+                            text-indent: 12px;
+                            span{
+                                float: right;
+                                margin-right: 12px;
+                            }
+                        }
+                    }
+                    li:hover{
+                        background: #999;
+                    }
+                }
+            }
+            >ul{
+                li{
+                    float: left;
+                    margin:8px 5px 0;
+                    a{
+                        font-size: 12px;
+                        color:#a4a4a4;
+                    }
+                    a:hover{
+                        color:#dd09a5;
+                    }
+                }
+            }
+        }
+    }
+}
+.fast_link_bg{
+    @include bg(#f0f0f0,40px);
+    .fast_link{
+        @include con(#f0f0f0,40px);
+        h3{
+            float: left;
+            width:200px;
+            height:100%;
+            font-size: 14px;
+            color:#676767;
+            line-height: 40px;
+        }
+        ul{
+            float:left;
+            width:750px;
+            li{
+                float:left;
+                padding: 0 12px;
+                line-height: 40px;
+                font-size: 14px;
+                a{
+                    color:#000;
+                }
+                a:hover{
+                    color:$pink;
+                }
+            }
+        }
+    }
+}
+.advert1_bg{
+    @include con(#fefefe,150px);
+    padding-top:20px;
+    li{
+        float:left;
+        img{
+            display:block;
+        }
+    }
+    .advert1_1{
+        img{
+            width:112px;
+            height:110px;
+        }
+    }
+}
+.filter_bg{
+	width: 100%;
+	height: auto;
+	background: #fefefe;
+	border-top: 1px solid #dd09a5;
+	min-width: 1200px;
+	.filter{
+		width: 1200px;
+		height: auto;
+		background: #fefefe;
+		margin:0 auto;
+		.filter_tit{
+			width: 100%;
+			height: 41px;
+			line-height: 41px;
+			font-size: 12px;
+			color: #5d5d5d;
+			span{
+				font-weight: 900;
+				color: #cb0300;
+			}
+		}
+		.filter_box{
+			width: 100%;
+			overflow: hidden;
+			border-bottom: 1px solid #dfdfdf;
+			.filter_list{
+				width: 100%;
+				overflow: hidden;
+				>li{
+					border-top: 1px solid #dfdfdf;
+					overflow: hidden;
+					height: auto;
+					.filter_list_tit{
+						width: 110px;
+						height: 100%;
+						background: #f0f0f0;
+						color: #5d5d5d;
+						font-size: 12px;
+						line-height: 40px;
+						text-indent: 10px;
+						font-weight: 900;
+						float: left;
+					}
+					.first{
+						height: 126px;
+					}
+					.first_list{
+						width: 1090px;
+						padding:14px 10px;
+						float: left;
+						overflow: hidden;
+						li{
+							float: left;
+							img{
+								display: block;
+							}
+						}
+					}
+					.last_list{
+						width: 1090px;
+						padding:14px 10px;
+						float: left;
+						overflow: hidden;
+						li{
+							float: left;
+							line-height: 1;
+							font-size: 12px;
+							margin-right: 40px;
+							img{
+								display: block;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.con_bg{
+	width: 100%;
+	height: auto;
+	background: #fefefe;
+	padding-top: 20px;
+	.con{
+		width: 1200px;
+		height: auto;
+		background: #fefefe;
+		margin: 0 auto;
+		overflow: hidden;
+		.con_left{
+			width: 198px;
+			float: left;
+			margin-right: 10px;
+			>div{
+				border: 1px solid #e5e5e5;
+				border-top: 3px solid #e5e5e5;
+				margin-bottom: 10px;
+				>h3{
+					width: 100%;
+					height: 33px;
+					font-size: 14px;
+					font-weight: 100;
+					color: #5d5d5d;
+					line-height: 33px;
+					text-indent: 10px;
+					span{
+						float: right;
+						color: #cbcbcb;
+						margin-right: 10px;
+						font-size: 12px;
+					}
+				}
+				.goods_box{
+					width: 100%;
+					height: 252px;
+					>a{
+						display: block;
+						width: 100%;
+						height: 100%;
+						padding-top: 44px;
+						padding: 44px 10px 0;
+						img{
+							display: block;
+							margin: 0 auto;
+						}
+						h4{
+							font-size: 16px;
+							color: #e2111e;
+							line-height: 1;
+							padding-top: 18px;
+							// font-weight: 900;
+						}
+						p{
+							font-size: 12px;
+							color: #5d5d5d;
+							line-height: 1;
+							padding-top: 13px;
+						}
+						h5{
+							font-size: 12px;
+							color: #e2111e;
+							line-height: 1;
+							padding-top: 8px;
+						}
+					}
+				}
+			}
+		}
+		.con_right{
+			width: 992px;
+			float: left;
+			.con_right_tit{
+				width: 100%;
+				height: 74px;
+				border: 1px solid #f2f2f2;
+				.box_one{
+					width: 100%;
+					height: 39px;
+					background: #f2f2f2;
+					padding-top: 6px;
+					>div{
+						float: left;
+						height: 26px;
+					}
+					.sort{
+						margin-left: 10px;
+						overflow: hidden;
+						border: 1px solid #cbcbcb;
+						width: 322px;
+						a{
+							display: block;
+							float: left;
+							width: 20%;
+							height: 100%;
+							font-size: 12px;
+							color: #5d5d5d;
+							text-align: center;
+							line-height: 26px;
+							text-decoration: none;
+							transition: all 0.2s; 
+						}
+						.active{
+							background: #e2111e;
+							color: #fefefe;
+						}
+						a:hover{
+							background: #e2111e;
+							color: #fefefe;
+						}
+					}
+					.search{
+						margin-left: 10px;
+						form{
+							height: 100%;
+							input{
+								display: block;
+								float: left;
+								height: 100%;
+								border: 1px solid #cbcbcb;
+								background: #fefefe;
+								font-size: 12px;
+								color: #5d5d5d;
+							}
+							span{
+								float: left;
+								margin:0 4px;
+							}
+							.price{
+								width: 44px;
+								color: #cbcbcb;
+								background: url('../imgs/price_bg.jpg') left top no-repeat;
+								text-indent: 20px;
+							}
+							.search_area{
+								width: 98px;
+								text-indent: 5px;
+								margin-left: 10px;
+							}
+							.submit{
+								width: 43px;
+								border-left: 0;
+
+							}
+							.submit:hover{
+								color: #e2111e;
+							}
+						}
+					}
+					.list{
+						float: right;
+						margin-right: 10px;
+						span{
+							font-size: 16px;
+							color: #878787;
+							float: left;
+							margin-right: 11px;
+							line-height: 26px;
+						}
+						button{
+							width: 32px;
+							float: left;
+							background: #fefefe;
+							border: 1px solid #dcdcdc;
+							font-size: 16px;
+							color: #e2111e;
+						}
+						.left_btn{
+							border-right: 0;
+						}
+					}
+				}
+				.box_two{
+					width: 100%;
+					height: 39px;
+					background: #fefefe;
+					padding-top: 6px;
+					padding-left: 25px;
+					position: relative;
+					form{
+						height: 25px;
+						label{
+							font-size: 12px;
+							color:#5d5d5d;
+							line-height: 26px;
+							float: left;
+						}
+						input[type=text]{
+							width: 208px;
+							height: 100%;
+							border: 1px solid #cbcbcb;
+							font-size: 12px;
+							color:#5d5d5d;
+							text-indent: 6px;
+							cursor: pointer;
+							background: url('../imgs/search_area_bg.jpg') right top no-repeat;
+							margin-right: 16px;
+							float: left;
+						}
+						input[type=text]:hover{
+							color:#e2111e;
+						}
+						.checkBox{
+							width: 14px;
+							height:14px;
+							margin-right: 6px;
+							float: left;
+							border: 1px solid #bcbcbc;
+							margin-top: 5px;
+						}
+						.checkBox+label{
+							cursor: pointer;
+							margin-right: 20px;
+						}	
+						.checkBox:hover{
+							border: 1px solid #f01111;
+						}	
+						.checkBox:hover +label{
+							color: #f01111;
+						}	
+						.checkBox+label:hover{
+							color: #f01111;
+						}			
+					}
+					.list{
+						width: 500px;
+						min-height: 100px;
+						background: #fefefe;
+						position: relative;
+						left: 0;
+						top:3px;
+						z-index: 100;
+						border: 1px solid #bcbcbc;
+						box-shadow: 3px 3px 13px rgba(0,0,0,0.7);
+						border-radius: 3px;
+						display: none;
+						.list_card{
+							width: 100%;
+							height: 38px;
+							border-bottom: 1px solid #e5e5e5;
+							padding-top: 11px;
+							li{
+								float: left;
+								height: 27px;
+								padding: 0 10px;
+								line-height: 27px;
+								cursor: pointer;
+								margin-right: 5px;
+							}
+							li:hover{
+								color: #fe0303;
+							}
+							.active{
+								color: #fe0303;
+							}
+							a{
+								float: right;
+								font-size: 24px;
+								margin-right: 10px;
+								color: #878787;
+								text-decoration: none;
+							}
+							a:hover{
+								color: #fe0303;
+							}
+						}
+						.list_con{
+							padding: 8px 10px 8px 24px;
+							overflow: hidden;
+							li{
+								float: left;
+								width: 87px;
+								height: 28px;
+								line-height: 28px;
+								color: #5d5d5d;
+								font-size: 12px;
+								span{
+									display: table;
+									height: 100%;
+									padding: 0 12px;
+									cursor: pointer;
+									transition:all 0.2s;
+								}
+								span:hover{
+									background: #fe0303;
+									color: #fefefe;
+								}
+							}
+						}
+					}
+				}
+			}
+			.all_goods_box{
+				width: 100%;
+				height: auto;
+				overflow: hidden;
+				ul{
+					width: 100%;
+					height: auto;
+					overflow: hidden;
+					padding-top: 20px;
+					li{
+						width: 248px;
+						height: 446px;
+						float: left;
+						border:1px solid transparent;
+						cursor: pointer;
+						a{
+							display: block;
+							width: 100%;
+							height: 88%;
+							padding: 80px 18px 0;
+							img{
+								display: block;
+								margin:0 auto;
+							}
+							h4{
+								font-size: 18px;
+								color: #e2111e;
+								line-height: 1;
+								padding-top: 20px;
+								// font-weight: 900;
+							}
+							p{
+								font-size: 14px;
+								color: #5d5d5d;
+								line-height: 1;
+								padding-top: 13px;
+							}
+							.spl{
+								font-size: 14px;
+								color: #e2111e;
+								line-height: 1;
+								padding-top: 13px;
+							}
+							h5{
+								font-size: 14px;
+								color: #5d5d5d;
+								line-height: 1;
+								padding-top: 13px;
+								line-height: 23px;
+								span{
+									display: block;
+									float: left;
+									background: #e2111e;
+									padding: 3px 3px;
+									color: #fefefe;
+									margin-right: 5px;
+									height: 19px;
+									width: 35px;
+									line-height: 15px;
+								}
+							}
+						}
+						>div{
+							width: 109px;
+							height: 26px;
+							border: 1px solid #dcdcdc;
+							border-right: 0;
+							margin: 0 auto;
+							text-align: center;
+							line-height: 26px;
+							color: #fb888f;
+							i{
+								display: block;
+								float: left;
+								width: 25%;
+								height: 100%;
+								padding-top: 5px;
+								border-right: 1px solid #dcdcdc;
+							}
+							i:hover{
+								color: #e2111e;
+							}
+						}	
+					}
+					li:hover{
+						border:1px solid #e5e5e5;
+					}
+				}
+			}
+			.change_bar{
+				width: 500px;
+				height:55px;
+				float: right;
+				margin-top: 40px;
+				font-size: 12px;
+				color: #6d6d6d;
+				button{
+					float: left;
+					background: #fefefe;
+					width: 34px;
+					height: 32px;
+					border: 1px solid #dfdfdf; 
+				}
+				span{
+					float: left;
+					margin: 0 5px;
+					line-height: 34px;
+				}
+				.contiun{
+					width: 70px;
+					height: 32px;
+					border: 1px solid #dfdfdf; 
+					background: #fefefe;
+				}
+				input{
+					width: 34px;
+					height: 32px;
+					float: left;
+					text-align: center;
+				}
+				.ok{
+					width: 40px;
+				}
+				button:hover{
+					background: #f7f7f7;
+				}
+			}
+		}
+		.con_right::after{
+			content: '';
+			height: 0;
+			clear: both;
+			display: block;
+			visibility: hidden;
+			overflow: hidden;
+		}
+	}
+}

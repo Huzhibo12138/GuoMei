@@ -25,3 +25,10 @@ document.onscroll = function (ev) {
 		$('.leftBar').slideUp();
 	}
 }
+
+// 搜索框跳转
+$(document).submit(function() {
+	window.location.href="list.html";
+	console.log(123);
+	return false;
+});

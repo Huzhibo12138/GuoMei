@@ -56,32 +56,3 @@ $(function() {
 		nowX = null;
 	}
 });
-
-// function drag() {
-//     var obj = $('.block');
-//     obj.bind('mousedown', start);
-//     function start(e) {
-//         var ol = obj.offset().left;
-//         console.log(ol);
-//         deltaX = e.pageX - ol;
-//         $(document).bind({
-//             'mousemove': move,
-//             'mouseup': stop
-//         });
-//         return false;
-//     }
-//     function move(e) {
-//     	console.log(e.pageX);
-//         obj.css({
-//             // "left": (e.pageX - deltaX)
-//         });
-//         return false;
-//     }
-//     function stop() {
-//         $(document).unbind({
-//             'mousemove': move,
-//             'mouseup': stop
-//         });
-//     }
-// }
-// drag();
